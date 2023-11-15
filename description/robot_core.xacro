@@ -19,6 +19,10 @@
     <color rgba="0 0 0 1"/>
 </material>
 
+<material name="red">
+    <color rgba="1 0 0 1"/>
+</material>
+
 <link name="base_link">
 </link>
 
@@ -75,10 +79,6 @@
         <origin xyz="0 0 0" rpy="0 0 0"/>
     </xacro:inertial_cylinder>
     <gazebo>
-    <material>Gazebo/Black</material>
-        <mu1 value="0.01"/>
-        <mu2 value="0.01"/>
-    </gazebo>
 </link>
 
 <!-- RIGHT WHEEL -->
