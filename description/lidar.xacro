@@ -35,28 +35,28 @@
             <ray>
                 <scan>
                     <horizontal>
-                        <samples>360</samples>
-                        <resolution>0.1</resolution>
+                        <samples>1800</samples>
+                        <resolution>0.2</resolution>
                         <min_angle>-3.14</min_angle>
                         <max_angle>3.14</max_angle>
                     </horizontal>
                     <vertical>
-                        <samples>30</samples>
+                        <samples>15</samples>
                         <resolution>2</resolution>
                         <min_angle>-0.26</min_angle>
                         <max_angle>0.26</max_angle>
                     </vertical>
                 </scan>
                 <range>
-                    <min>0.1</min>
+                    <min>0.4</min>
                     <max>15</max>
                 </range>
             </ray>
             <plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so">
                 <ros>
-                    <argument>~/out:=scan</argument>
+                    <argument>~/out:=poinrcloud2</argument>
                 </ros>
-                <output_type>sensor_msgs/LaserScan</output_type>
+                <output_type>sensor_msgs/PointCloud2</output_type>
                 <frame_name>lidar_frame</frame_name>
             </plugin>
         </sensor>
